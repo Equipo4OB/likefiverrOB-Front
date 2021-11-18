@@ -1,13 +1,14 @@
 import { React } from "react";
 import NavBar from "./components/NavBar/Index";
+import HomePage from "./pages/HomePage";
+import Footer from "./components/Footer/Index";
+import { BrowserRouter } from "react-router-dom";
 
 //CSS IMPORTS
 import { ThemeProvider } from "styled-components";
 import styled from "styled-components";
 import { lightTheme } from "./styles/theme";
 import { GlobalStyles } from "./styles/GlobalStyles";
-import { BrowserRouter } from "react-router-dom";
-import HomePage from "./pages/HomePage";
 
 function App() {
   const Container = styled.div`
@@ -23,7 +24,7 @@ function App() {
       <GlobalStyles />
       <Container className="App">
         <BrowserRouter>
-          <NavBar /> <HomePage />
+          <NavBar /> <HomePage /> <Footer />
         </BrowserRouter>
       </Container>
     </ThemeProvider>
