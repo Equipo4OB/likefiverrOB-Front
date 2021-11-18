@@ -14,7 +14,7 @@ const Ul = styled.ul`
   li:hover {
     color: ${(props) => props.theme.accent};
   }
-  @media (max-width: 768px) {
+  @media (max-width: 964px) {
     flex-flow: column nowrap;
     background-color: ${(props) => props.theme.text};
     position: fixed;

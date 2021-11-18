@@ -23,10 +23,8 @@ function App() {
       <GlobalStyles />
       <Container className="App">
         <BrowserRouter>
-          <NavBar />
+          <NavBar /> <HomePage />
         </BrowserRouter>
-
-        <HomePage />
       </Container>
     </ThemeProvider>
   );
