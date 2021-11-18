@@ -7,6 +7,7 @@ import styled from "styled-components";
 import { lightTheme } from "./styles/theme";
 import { GlobalStyles } from "./styles/GlobalStyles";
 import { BrowserRouter } from "react-router-dom";
+import HomePage from "./pages/HomePage";
 
 function App() {
   const Container = styled.div`
@@ -19,11 +20,13 @@ function App() {
 
   return (
     <ThemeProvider theme={lightTheme}>
-      <GlobalStyles />{" "}
+      <GlobalStyles />
       <Container className="App">
         <BrowserRouter>
           <NavBar />
-        </BrowserRouter>{" "}
+        </BrowserRouter>
+
+        <HomePage />
       </Container>
     </ThemeProvider>
   );
