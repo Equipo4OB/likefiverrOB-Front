@@ -6,7 +6,7 @@ export const CatDiv = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin: 2rem;
+  margin: 6rem 2rem 6rem 2rem;
 `;
 
 export const GroupDiv = styled.div`
