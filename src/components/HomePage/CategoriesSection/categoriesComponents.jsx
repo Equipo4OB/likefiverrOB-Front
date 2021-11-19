@@ -7,6 +7,8 @@ export const CatDiv = styled.div`
   justify-content: center;
   align-items: flex-start;
   margin: 6rem 2rem 6rem 2rem;
+
+
 `;
 
 export const GroupDiv = styled.div`
@@ -15,6 +17,11 @@ export const GroupDiv = styled.div`
   align-items: center;
   margin-top: 2rem;
   width: 100%;
+
+  @media screen and (max-width: 468px) {
+    flex-direction: column;
+
+  }
 `;
 
 export const IconDiv = styled.div`
@@ -29,6 +36,9 @@ export const IconDiv = styled.div`
     border-bottom: 1px solid ${(props) => props.theme.accent};
     transition: border-bottom 0.6s linear;
   }
+  @media screen and (max-width: 468px) {
+    margin-top: 10px;
+      }
 `;
 
 export const CatLink = styled(Link)`
@@ -38,4 +48,7 @@ export const CatLink = styled(Link)`
 export const CatHeader = styled.h1`
   color: ${(props) => props.theme.text};
   font-size: 2rem;
+
+  @media screen and (max-width: 468px) {
+font-size: 1.5rem;      }
 `;

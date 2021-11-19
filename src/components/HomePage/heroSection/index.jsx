@@ -7,8 +7,7 @@ export default function HeroSection() {
   return (
     <HeroDiv>
       <HeroHeader>
-        Encuentra los servicios <em>freelance</em>
-        <br /> ideales para tu negocio
+        Encuentra los servicios <em>freelance</em> ideales para tu negocio
       </HeroHeader>
       <HeroSearch />
       <HeroTags />

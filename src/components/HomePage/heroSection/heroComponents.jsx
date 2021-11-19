@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import img from "../../assets/images/heroimage.jpg";
+import img from "../../../assets/images/heroimage.jpg";
 
 export const HeroDiv = styled.div`
   background-image: url(${img});
@@ -13,6 +13,13 @@ export const HeroDiv = styled.div`
   justify-content: center;
   align-items: flex-start;
   padding: 10%;
+
+
+
+  @media screen and (max-width: 468px) {
+    height: auto;      
+    
+  }
 `;
 
 export const SearchDiv = styled.div`
@@ -24,6 +31,9 @@ export const SearchDiv = styled.div`
   background-color: ${(props) => props.theme.bodyBg};
   min-width: 40vw;
   min-height: 5vh;
+
+
+
 `;
 
 export const InputSearch = styled.input`
@@ -55,12 +65,18 @@ export const HeroHeader = styled.h1`
   font-size: 3rem;
   color: ${(props) => props.theme.bodyBg};
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.42);
+  white-space: wrap;
+  @media screen and (max-width: 468px) {
+    font-size: 1.5rem;      }
 `;
 
 export const TagsDiv = styled.div`
   display: flex;
   align-items: baseline;
   justify-content: center;
+  @media screen and (max-width: 468px) {
+    display:flex;
+  flex-direction: column;     }
 `;
 
 export const PTags = styled.p`
@@ -68,6 +84,8 @@ export const PTags = styled.p`
   color: ${(props) => props.theme.bodyBg};
   font-weight: 500;
   margin-right: 0.5rem;
+
+
 `;
 
 export const ButtonTags = styled.button`
@@ -85,4 +103,7 @@ export const ButtonTags = styled.button`
     background: ${(props) => props.theme.bodyBg};
     color: ${(props) => props.theme.headings};
   }
+
+  @media screen and (max-width: 468px) {
+    margin-top: 10px;    }
 `;

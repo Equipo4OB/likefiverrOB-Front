@@ -4,14 +4,20 @@ import img from "../../../assets/images/findimage.jpg";
 export const CTADiv = styled.div`
   background-image: url(${img});
 
-  height: 30vh;
   background-size: cover;
   opacity: 1;
+  white-space: wrap;
 
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 10%;
+
+  @media screen and (max-width: 468px) {
+    flex-direction: column;
+    height: auto;
+
+  }
 `;
 
 export const CTAHeader = styled.h1`

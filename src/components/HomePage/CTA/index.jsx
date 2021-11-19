@@ -5,9 +5,7 @@ export default function CTA() {
   return (
     <CTADiv>
       <CTAHeader>
-        Encuentra el <em>talento</em> que <br /> necesitas para que tus negocios
-        <br />
-        <em>crezcan.</em>
+        Encuentra el <em>talento</em> que necesitas para que tus negocios <em>crezcan.</em>
       </CTAHeader>
       <CTAButton>Buscar</CTAButton>
     </CTADiv>
