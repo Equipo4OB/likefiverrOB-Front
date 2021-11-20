@@ -1,8 +1,10 @@
 import { React } from "react";
 import NavBar from "./components/NavBar/Index";
 import HomePage from "./pages/HomePage";
+import Explore from "./pages/Explorar";
+
 import Footer from "./components/Footer/Index";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //CSS IMPORTS
 import { ThemeProvider } from "styled-components";
@@ -23,9 +25,14 @@ function App() {
     <ThemeProvider theme={lightTheme}>
       <GlobalStyles />
       <Container className="App">
+        <NavBar />
         <BrowserRouter>
-          <NavBar /> <HomePage /> <Footer />
-        </BrowserRouter>
+          <Routes>
+            <Route exact path="/" element={<HomePage />} />
+            <Route exact path="/explorar" element={<Explore />} />
+          </Routes>
+        </BrowserRouter>{" "}
+        <Footer />
       </Container>
     </ThemeProvider>
   );

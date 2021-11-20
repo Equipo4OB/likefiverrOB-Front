@@ -9,7 +9,7 @@ export const Nav = styled.nav`
   z-index: 10;
 `;
 
-export const NavLink = styled(Link)`
+export const NavLink = styled.a`
   display: flex;
   align-items: center;
   text-decoration: none;

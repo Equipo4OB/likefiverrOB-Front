@@ -1,17 +1,22 @@
 import React from "react";
+import { BrowserRouter, NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
-  li {
+  a {
     padding: 18px 10px;
     cursor: pointer;
     font-weight: 500;
+    color: ${(props) => props.theme.text};
+  }
+  a {
+    text-decoration: none;
   }
 
-  li:hover {
+  a:hover {
     color: ${(props) => props.theme.accent};
   }
   @media (max-width: 964px) {
@@ -25,8 +30,9 @@ const Ul = styled.ul`
     width: 300px;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
-    li {
+    a {
       color: #fff;
+      text-decoration: none;
     }
   }
 `;
@@ -34,11 +40,11 @@ const Ul = styled.ul`
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-      <li>Explora</li>
-      <li>Conviertete en vendedor</li>
-      <li>Contáctanos</li>
-      <li>Únete</li>
-      <li>Regístrate</li>
+      <a href="/explorar">Explorar</a>
+      <a href="/">Conviertete en vendedor</a>
+      <a href="/">Contáctanos</a>
+      <a href="/">Únete</a>
+      <a href="/">Regístrate</a>
     </Ul>
   );
 };
