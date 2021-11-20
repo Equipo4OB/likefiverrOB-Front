@@ -2,10 +2,7 @@ import React from "react";
 import { AiFillStar, AiFillHeart } from "react-icons/ai";
 import {
     WorkCard,
-    Seller,
-    SellerData,
     SellerNick,
-    SellerLevel,
     WorkTitle,
     WorkStars,
     WorkPriceDiv,
@@ -15,27 +12,17 @@ import {
 } from "../components/Explore/workCard";
 
 export default function CardComponent({
-    title,
-    stars,
-    price,
-    seller,
-    image
+urlImages, author, title, category, score, price
 }) {
 
     return (
             <WorkCard>
-                <img src={image} alt={title} />
-                <Seller>
-                    <img src={seller.avatar} alt={seller.nick} />
-                    <SellerData>
-                        <SellerNick>{seller.nick}</SellerNick>
-
-                        <SellerLevel>{seller.level}</SellerLevel>
-                    </SellerData>
-                </Seller>
+                <img src={urlImages} alt={title} />
+                        <SellerNick>{author}</SellerNick>
                 <WorkTitle>{title}</WorkTitle>
+                <PriceLabel>{category}</PriceLabel>
                 <WorkStars>
-                    <AiFillStar size={13} /> {stars}
+                    <AiFillStar size={13} /> {score}
                 </WorkStars>
                 <WorkPriceDiv>
                     <AiFillHeart size={25} fill="darkgray" />{" "}

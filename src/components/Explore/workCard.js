@@ -6,6 +6,7 @@ export const WorkCard = styled.div`
   width: 350px;
   border: 1px solid lightgray;
   margin: 20px;
+  
 `;
 
 export const WorkTitle = styled.p`
