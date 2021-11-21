@@ -15,7 +15,7 @@ export default function Herov2() {
         >
             <Container>
                 <div className="py-28 md:py-60">
-                <h1 className="text-4xl md:text-5xl p-5 md:p-0 font-sans text-white">Encuentra los servicios <span className="italic">freelance</span> ideales para tu negocio</h1>
+                    <h1 className="text-4xl md:text-5xl p-5 md:p-0 font-sans text-white">Encuentra los servicios <span className="italic">freelance</span> ideales para tu negocio</h1>
                 </div>
             </Container>
         </div>
