@@ -16,7 +16,7 @@ export default function Loopv2({ dynamicFilter }) {
 
     return (
         <section>
-            <div className="grid grid-flow-col auto-cols gap-2 lg:gap-12">
+            <div className="grid grid-flow-row grid-cols-1 md:grid-cols-3 gap-4 lg:gap-12">
                 {items.map((item, index) =>
                     index < 10 && (
                         <LastWorksLink

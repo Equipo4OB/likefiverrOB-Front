@@ -13,10 +13,10 @@ export default function DynamicListv2() {
 
     return (
         <Container>
-            <section className="py-12 space-y-4">
-                <span className="text-2xl font-bold"> Selecciona una categoría: </span>
+            <section className="py-12 space-y-4 px-4 md:px-0">
+                <span className="text-3xl font-bold"> Selecciona una categoría: </span>
                 <div className="space-y-12">
-                    <div className="grid grid-flow-col auto-cols gap-2 lg:gap-12">
+                    <div className="grid grid-flow-row grid-cols-2 md:grid-cols-5 gap-2 lg:gap-12">
                         <button
                             className="flex items-center space-x-2 px-6 py-2 rounded rounded-full border border-gray-200 shadow-md font-sans hover:bg-gray-50 hover:border-gray-500"
                             onClick={(e) => setSelection(e.target.value)}

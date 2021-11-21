@@ -5,8 +5,9 @@ import Container from "./Container";
 export default function NavBarv2() {
   return (
     <Container>
-      <nav className="flex flex-col md:flex-row md:items-center md:justify-between py-4">
-        <div className="flex justify-center md:justify-start">
+      <nav className="flex flex-col py-4">
+        <div className="flex justify-center">
+          <a href="/">
           <svg
             className="h-12"
             viewBox="0 0 47 53"
@@ -30,11 +31,8 @@ export default function NavBarv2() {
               fill="#0DC0CB"
             />
           </svg>
+          </a>
         </div>
-        <ul className="flex justify-center md:justify-end space-x-4 py-4 md:py-0">
-          <li>Todos los Servicios</li>
-          <li>Categorías</li>
-        </ul>
       </nav>
     </Container>
   );
