@@ -8,7 +8,7 @@ import { FaReact, FaAngular, FaNodeJs, FaJava } from "react-icons/fa";
 import { BiInfinite } from "react-icons/bi";
 
 export default function DynamicListv2() {
-    const [selection, setSelection] = useState();
+    const [selection, setSelection] = useState("todo");
     console.log(selection);
 
     return (
@@ -100,7 +100,6 @@ export default function DynamicListv2() {
                                 </div>
                             }
                         </span>
-                        {selection === undefined && <Loop />}
                         {selection === "todo" && <Loop />}
                         {selection && <FilteredLoopv2 dynamicFilter={selection} />}
                     </div>
