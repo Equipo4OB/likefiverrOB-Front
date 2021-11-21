@@ -3,6 +3,7 @@ import { AiFillStar } from "react-icons/ai";
 
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import { LastWorksLink } from "../HomePage/LastWorks/LastWorksComponents";
 import {
   CategoryButton,
   DetailContainer,
@@ -11,6 +12,7 @@ import {
   DetailScore,
   DetailScoreDiv,
   DetailTitle,
+  PriceButton,
 } from "./WorkDetailComponents";
 
 export default function WorkDetail() {
@@ -34,8 +36,9 @@ export default function WorkDetail() {
   return (
     <DetailDiv>
       <DetailTitle>{work.title}</DetailTitle>
-      <CategoryButton>{category.categoryName}</CategoryButton>
-
+      <LastWorksLink href={`/categorias/${category.categoryName}`}>
+        <CategoryButton>{category.categoryName}</CategoryButton>
+      </LastWorksLink>
       <DetailScoreDiv>
         <DetailScore>{work.author}</DetailScore>{" "}
         <DetailScore>
@@ -45,7 +48,10 @@ export default function WorkDetail() {
       </DetailScoreDiv>
 
       <DetailContainer>
-        <DetailContainerDiv>{work.description}</DetailContainerDiv>
+        <DetailContainerDiv>
+          {work.description}
+          <PriceButton>Continuar ({work.price}€)</PriceButton>
+        </DetailContainerDiv>
         <DetailContainerDiv>
           <img src={work.urlImages} alt={work.title} />
         </DetailContainerDiv>

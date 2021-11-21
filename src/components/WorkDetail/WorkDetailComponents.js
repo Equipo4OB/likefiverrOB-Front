@@ -46,4 +46,22 @@ export const CategoryButton = styled.button`
   margin: 0 0 1rem 0;
   opacity: 0.6;
   font-size: 10px;
+  :hover {
+    opacity: 0.8;
+  }
+`;
+
+export const PriceButton = styled.button`
+  background-color: ${(props) => props.theme.accent};
+  color: ${(props) => props.theme.bodyBg};
+  text-transform: uppercase;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  margin: 1rem 0 1rem 0;
+  opacity: 0.9;
+
+  :hover {
+    opacity: 1;
+  }
 `;

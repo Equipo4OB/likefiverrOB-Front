@@ -12,6 +12,7 @@ import { ThemeProvider } from "styled-components";
 import styled from "styled-components";
 import { lightTheme } from "./styles/theme";
 import { GlobalStyles } from "./styles/GlobalStyles";
+import CategoryList from "./components/CategoryList";
 
 function App() {
   const Container = styled.div`
@@ -32,6 +33,7 @@ function App() {
             <Route exact path="/" element={<HomePage />} />
             <Route exact path="/explorar" element={<Explore />} />
             <Route path="/cursos/:publicId" element={<WorkDetail />} />
+            <Route path="/categorias/:publicId" element={<CategoryList />} />
           </Routes>
         </BrowserRouter>{" "}
         <Footer />
