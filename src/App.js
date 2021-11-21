@@ -1,5 +1,5 @@
 import { React } from "react";
-import NavBar from "./components/NavBar/Index";
+import NavBarv2 from "../src/components/v2/navbar"
 import HomePage from "./pages/HomePage";
 import Explore from "./pages/Explorar";
 
@@ -28,7 +28,7 @@ function App() {
     <ThemeProvider theme={lightTheme}>
       <GlobalStyles />
       <Container className="App">
-        <NavBar />
+        <NavBarv2 />
         <BrowserRouter>
           <Routes>
             <Route exact path="/" element={<HomePage />} />
