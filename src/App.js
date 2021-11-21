@@ -5,6 +5,7 @@ import Explore from "./pages/Explorar";
 
 import Footer from "./components/Footer/Index";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import WorkDetail from "./components/WorkDetail/index";
 
 //CSS IMPORTS
 import { ThemeProvider } from "styled-components";
@@ -30,6 +31,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<HomePage />} />
             <Route exact path="/explorar" element={<Explore />} />
+            <Route path="/cursos/:publicId" element={<WorkDetail />} />
           </Routes>
         </BrowserRouter>{" "}
         <Footer />

@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 export const LastWorksDiv = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   margin: 6rem 2rem 6rem 2rem;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const GroupDiv = styled.div`
