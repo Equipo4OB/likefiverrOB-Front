@@ -26,7 +26,7 @@ export default function Detail() {
     return (
         <Container>
             <main className="my-12">
-                <article className="space-y-4">
+                <article className="p-4 md:p-0 space-y-4">
                     <h1 className="text-4xl">
                         {itemDetail.title}
                     </h1>
@@ -39,7 +39,7 @@ export default function Detail() {
                         <span className="text-lg font-bold">{itemDetail.price} €</span>
                     </div>
                     <img className="bg-cover" src={itemDetail.urlImages?.url} />
-                    <p> {itemDetail.description} </p>
+                    <p > {itemDetail.description} </p>
                 </article>
             </main>
         </Container>

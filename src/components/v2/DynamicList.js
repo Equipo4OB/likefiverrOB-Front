@@ -2,6 +2,7 @@ import { React, useState, useEffect } from "react";
 import "../../styles/tailwind.css";
 import Container from "./Container";
 import Button from "./Button";
+import Loop from "./Loop"
 import FilteredLoopv2 from "./FilteredLoop";
 import { FaReact, FaAngular, FaNodeJs, FaJava } from "react-icons/fa";
 import { BiInfinite } from "react-icons/bi";
@@ -61,25 +62,47 @@ export default function DynamicListv2() {
                     </div>
                     <div className="space-y-4">
                         <span className="flex items-center uppercase text-2xl font-light">
-                            {selection}
-                            {selection && (
-                                <svg
-                                    class="ml-2 w-6 h-6"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    viewBox="0 0 24 24"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="2"
-                                        d="M19 9l-7 7-7-7"
-                                    ></path>
-                                </svg>
-                            )}
+                            {selection ?
+                                <div className="flex">
+                                    {selection}
+                                    <svg
+                                        class="ml-2 w-6 h-6"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth="2"
+                                            d="M19 9l-7 7-7-7"
+                                        ></path>
+                                    </svg>
+                                </div>
+                                :
+                                <div className="flex">
+                                    TODO
+                                    <svg
+                                        class="ml-2 w-6 h-6"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth="2"
+                                            d="M19 9l-7 7-7-7"
+                                        ></path>
+                                    </svg>
+                                </div>
+                            }
                         </span>
-                        <FilteredLoopv2 dynamicFilter={selection} />
+                        {selection === undefined && <Loop />}
+                        {selection === "todo" && <Loop />}
+                        {selection && <FilteredLoopv2 dynamicFilter={selection} />}
                     </div>
                 </div>
             </section>

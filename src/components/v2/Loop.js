@@ -3,7 +3,7 @@ import "../../styles/tailwind.css";
 import Cardv2 from "./Card";
 import { LastWorksLink } from "../HomePage/LastWorks/LastWorksComponents";
 
-export default function FilteredLoopv2({ dynamicFilter }) {
+export default function Loopv2({ dynamicFilter }) {
     const APIURL = "https://api-team4-courses.herokuapp.com/";
     const [items, setItems] = useState([]);
     useEffect(() => getItems(), []);
@@ -16,9 +16,9 @@ export default function FilteredLoopv2({ dynamicFilter }) {
 
     return (
         <section>
-            <div className="grid grid-flow-row grid-cols-1 md:grid-cols-3 gap-4 lg:gap-12">
-                {items.filter((item) => item.category.categoryName === dynamicFilter).map((item, index) =>
-                    index < 5 && (
+            <div className="grid grid-flow-col auto-cols gap-2 lg:gap-12">
+                {items.map((item, index) =>
+                    index < 10 && (
                         <LastWorksLink
                             key={item.publicId}
                             href={`/cursos/${item.publicId}`}
