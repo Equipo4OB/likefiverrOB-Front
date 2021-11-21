@@ -102,6 +102,11 @@ export default function DynamicListv2() {
                         </span>
                         {selection === "todo" && <Loop />}
                         {selection !== "todo" && <FilteredLoopv2 dynamicFilter={selection} />}
+                        <div className="my-4">
+                            <a href={`/${selection}`}>
+                                <span>Ver más ⟶</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>

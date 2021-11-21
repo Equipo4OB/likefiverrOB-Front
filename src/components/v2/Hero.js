@@ -10,7 +10,7 @@ export default function Herov2() {
       style={{
         backgroundImage: `url(${HeroImage})`,
         backgroundSize: "cover",
-        backgroundPositionY: "70%",
+        backgroundPositionY: "30%",
       }}
     >
       <Container>

@@ -38,8 +38,8 @@ export default function Detail() {
                         <span className="text-gray-300 font-light">|</span>
                         <span className="text-lg font-bold">{itemDetail.price} €</span>
                     </div>
-                    <img className="bg-cover" src={itemDetail.urlImages?.url} />
-                    <p > {itemDetail.description} </p>
+                    <img className="w-1/2 bg-cover" src={itemDetail.urlImageFeatured} />
+                    <p> {itemDetail.description} </p>
                 </article>
             </main>
         </Container>
