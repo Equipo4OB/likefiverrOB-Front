@@ -101,7 +101,7 @@ export default function DynamicListv2() {
                             }
                         </span>
                         {selection === "todo" && <Loop />}
-                        {selection && <FilteredLoopv2 dynamicFilter={selection} />}
+                        {selection !== "todo" && <FilteredLoopv2 dynamicFilter={selection} />}
                     </div>
                 </div>
             </section>
