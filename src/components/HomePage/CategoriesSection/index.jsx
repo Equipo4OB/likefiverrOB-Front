@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import {
   CatDiv,
   CatHeader,
@@ -7,6 +6,7 @@ import {
   CardContainer,
   CategoryTitle,
   CategoryCard,
+  CatLink,
 } from "./categoriesComponents";
 
 export default function CategoriesSection() {
@@ -28,10 +28,15 @@ export default function CategoriesSection() {
           {cats.map(
             (cat, index) =>
               index < 10 && (
-                <CategoryCard key={cat.publicId}>
-                  <img src="" alt="" />
-                  <CategoryTitle>{cat.categoryName}</CategoryTitle>
-                </CategoryCard>
+                <CatLink
+                  href={`/categorias/${cat.categoryName}`}
+                  key={cat.publicId}
+                >
+                  <CategoryCard>
+                    <img src="" alt="" />
+                    <CategoryTitle>{cat.categoryName}</CategoryTitle>
+                  </CategoryCard>
+                </CatLink>
               )
           )}
         </CardContainer>

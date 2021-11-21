@@ -38,7 +38,7 @@ export const IconDiv = styled.div`
   }
 `;
 
-export const CatLink = styled(Link)`
+export const CatLink = styled.a`
   text-decoration: none;
   color: ${(props) => props.theme.accent};
 `;

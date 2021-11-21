@@ -26,7 +26,7 @@ export default function CategoryList() {
 
   return (
     <LastWorksDiv>
-      <LastWorksHeader>Nuestros cursos en {works.category}</LastWorksHeader>
+      <LastWorksHeader>Nuestros cursos en {publicId}</LastWorksHeader>
       <GroupDiv>
         {works
           .filter((work) => work.category.categoryName.includes(publicId))
