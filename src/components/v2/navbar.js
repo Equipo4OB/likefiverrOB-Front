@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/tailwind.css";
-import Container from "./container";
+import Container from "./Container";
 
 export default function NavBarv2() {
   return (

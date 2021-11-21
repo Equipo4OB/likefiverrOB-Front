@@ -1,6 +1,6 @@
 import { React, useState, useEffect } from "react";
 import "../../styles/tailwind.css";
-import Container from "./container";
+import Container from "./Container";
 import Button from "./Button";
 import FilteredLoopv2 from "./FilteredLoop";
 import { FaReact, FaAngular, FaNodeJs, FaJava } from "react-icons/fa";

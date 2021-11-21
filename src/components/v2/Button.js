@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/tailwind.css";
-import Container from "./container";
+import Container from "./Container";
 import HeroImage from "../../assets/images/heroimage2.jpg";
 import { FaReact, FaAngular, FaNodeJs, FaJava } from "react-icons/fa";
 

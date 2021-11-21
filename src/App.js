@@ -6,6 +6,7 @@ import Explore from "./pages/Explorar";
 import Footer from "./components/Footer/Index";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import WorkDetail from "./components/WorkDetail/index";
+import Detail from "./components/v2/Detail"
 
 //CSS IMPORTS
 import { ThemeProvider } from "styled-components";
@@ -32,7 +33,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<HomePage />} />
             <Route exact path="/explorar" element={<Explore />} />
-            <Route path="/cursos/:publicId" element={<WorkDetail />} />
+            <Route path="/cursos/:publicId" element={<Detail />} />
             <Route path="/categorias/:publicId" element={<CategoryList />} />
           </Routes>
         </BrowserRouter>{" "}
