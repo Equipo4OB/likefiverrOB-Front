@@ -11,10 +11,10 @@ export default function Buttonv2({
     return (
         <button className="flex items-center space-x-2 px-6 py-2 rounded rounded-full border border-blue-200 shadow-md font-sans hover:bg-blue-50">
             <span>
-                {name == "React" && <FaReact className="text-blue-600" />}
-                {name == "Angular" && <FaAngular className="text-red-600" />}
-                {name == "Node" && <FaNodeJs className="text-green-600" />}
-                {name == "Java" && <FaJava className="text-red-600" />}
+                {name === "React" && <FaReact className="text-blue-600" />}
+                {name === "Angular" && <FaAngular className="text-red-600" />}
+                {name === "Node" && <FaNodeJs className="text-green-600" />}
+                {name === "Java" && <FaJava className="text-red-600" />}
             </span>
             <span className="text-lg">
                 {name}</span>
